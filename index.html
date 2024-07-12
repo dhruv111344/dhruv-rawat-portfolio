@@ -7,39 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="animate.css">
 
-    <link rel="stylesheet" href="owl.carousel.min.css">
-    <link rel="stylesheet" href="owl.theme.default.min.css">
-    <link rel="stylesheet" href="magnific-popup.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 
-    <link rel="stylesheet" href="aos.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <link rel="stylesheet" href="ionicons.min.css">
+    <link rel="stylesheet" href="css/aos.css">
 
-    <link rel="stylesheet" href="flaticon.css">
-    <link rel="stylesheet" href="icomoon.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
 
-
-        
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .services-1 .icon {
-            display: block;
-            margin-bottom: 30px;
-            width: 139px;
-            margin-left: 70px;
-        }
-
-        .services-1 .zohoicon {
-            display: block;
-            width: 170px;
-            height: 142px;
-            margin-left: -14px;
-        }
-
         .cont {
             justify-content: center;
         }
@@ -59,14 +45,19 @@
             margin-bottom: 0px;
         }
 
-        @media (max-width: 600px) {
-            .services-1 .icon {
-                display: block;
-                margin-bottom: 30px;
-                width: 139px;
-                margin-left: 78px;
-            }
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
 
+        .icon.zohoicon img {
+            max-width: 50%;
+            height: auto;
+        }
+
+        @media (max-width: 500px) {
             article,
             aside,
             figcaption,
@@ -85,15 +76,11 @@
                 opacity: 0 !important;
             }
         }
-        .bg-img {
-            background-image: url('images/bg_2.png');
-            background-size: cover;
-            background-position: center;
-            height: 100%;
-            min-height: 700px;
-        }
-        .text {
-            color: #fff;
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .icon.zohoicon img {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -123,24 +110,94 @@
             </div>
         </div>
     </nav>
-    <section id="home-section" class="py-5" style="margin-top: 4rem;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 order-md-2 bg-img"></div>
-                <div class="col-md-6 order-md-1 d-flex align-items-center">
-                    <div class="text">
-                        <span class="subheading">Hello!</span>
-                        <h1 class="mb-4 mt-3">I'm a <span>web developer</span> based in Panchkula</h1>
-                        <p>
-                            <a href="#" class="btn btn-primary py-3 px-4">Hire me</a>
-                            <a href="#" class="btn btn-outline-light py-3 px-4">My works</a>
-                        </p>
+    <section id="home-section" class="hero">
+        <div class="home-slider  owl-carousel">
+            <div class="slider-item ">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+                        data-scrollax-parent="true">
+                        <div class="one-third js-fullheight order-md-last img"
+                            style="background-image:url(images/bg_1.png);">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="one-forth d-flex  align-items-center ftco-animate"
+                            data-scrollax=" properties: { translateY: '70%' }">
+                            <div class="text">
+                                <span class="subheading">Hello!</span>
+                                <h1 class="mb-4 mt-3">I'm <span>Dhruv</span></h1>
+                                <h2 class="mb-4">A Freelance Web Developer and Zoho Developer</h2>
+                                <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#"
+                                        class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-item">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
+                        data-scrollax-parent="true">
+                        <div class="one-third js-fullheight order-md-last img"
+                            style="background-image:url(images/bg_2.png);">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="one-forth d-flex align-items-center ftco-animate"
+                            data-scrollax=" properties: { translateY: '70%' }">
+                            <div class="text">
+                                <span class="subheading">Hello!</span>
+                                <h1 class="mb-4 mt-3">I'm a <span>web developer</span> based in Panchkula</h1>
+                                <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#"
+                                        class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-6 col-lg-5 d-flex">
+                    <div class="img-about img d-flex align-items-stretch">
+                        <div class="overlay"></div>
+                        <div class="img d-flex align-self-stretch align-items-center"
+                            style="background-image:url(images/bg_1.png);">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+                    <div class="row justify-content-start pb-3">
+                        <div class="col-md-12 heading-section ftco-animate">
+                            <h1 class="big">About</h1>
+                            <h2 class="mb-4 abt">About Me</h2>
+                            <ul class="about-info mt-4 px-md-0 px-2">
+                                <li class="d-flex"><span>Name:</span> <span>Dhruv Rawat</span></li>
+                                <li class="d-flex"><span>Date of birth:</span> <span>June 27, 2003</span></li>
+                                <li class="d-flex"><span>Address:</span> <span>Panchkula HR 134116 INDIA</span></li>
+                                <li class="d-flex"><span>Email:</span> <span>dhruvrawat79@gmail.com</span></li>
+                                <li class="d-flex"><span>Phone: </span> <span>+91 9306326822</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                        <div class="text prt">
+                            <p class="mb-4">
+                                <span class="number" data-number="20">0</span>
+                                <span>Project complete</span>
+                            </p>
+                            <p><a href="#" class="btn btn-primary py-3 px-3">Download CV</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="ftco-section ftco-no-pb" id="resume-section">
         <div class="container">
             <div class="row justify-content-center pb-5">
@@ -213,7 +270,7 @@
                 </div>
                 <div class="col-md-4 text-center d-flex ftco-animate">
                     <a href="#" class="services-1">
-                        <span class="icon">
+                        <span class="icon zohoicon">
                             <img src="./images/zoho.svg" alt="">
                         </span>
                         <div class="desc">
@@ -225,6 +282,49 @@
         </div>
     </section>
 
+    <!-- <section class="ftco-section" id="services-section">
+        <div class="container">
+            <div class="row justify-content-center py-5 mt-5">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Services</h1>
+                    <h2 class="mb-4">Services</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center d-flex ftco-animate">
+                    <a href="#" class="services-1">
+                        <span class="icon">
+                            <i class="fa-brands fa-php"></i>
+                        </span>
+                        <div class="desc">
+                            <h3 class="mb-5">PHP Development</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 text-center d-flex ftco-animate">
+                    <a href="#" class="services-1">
+                        <span class="icon">
+                            <i class="fa-brands fa-js"></i>
+                        </span>
+                        <div class="desc">
+                            <h3 class="mb-5">JavaScript Development</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 text-center d-flex ftco-animate">
+                    <a href="#" class="services-1">
+                        <span class="icon zohoicon">
+                            <img src="./images/zoho.svg" alt="">
+                        </span>
+                        <div class="desc">
+                            <h3 class="mb-5">Zoho Development</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
     <section class="ftco-section" id="services-section">
         <div class="container">
             <div class="row justify-content-center py-5 mt-5">
@@ -235,8 +335,8 @@
             </div>
             <div class="row">
                 <div class="col-md-4 text-center d-flex ftco-animate">
-                    <a href="#" class="services-1"> 
-                       
+                    <a href="#" class="services-1">
+
                         <div class="desc">
                             <h3 class="mb-5">Zoho CRM</h3>
                         </div>
@@ -244,7 +344,7 @@
                 </div>
                 <div class="col-md-4 text-center d-flex ftco-animate">
                     <a href="#" class="services-1">
-                       
+
                         <div class="desc">
                             <h3 class="mb-5">Zoho Books</h3>
                         </div>
@@ -252,7 +352,7 @@
                 </div>
                 <div class="col-md-4 text-center d-flex ftco-animate">
                     <a href="#" class="services-1">
-                       
+
                         <div class="desc">
                             <h3 class="mb-5">Zoho Creator</h3>
                         </div>
@@ -262,7 +362,7 @@
             <div class="row">
                 <div class="col-md-4 text-center d-flex ftco-animate">
                     <a href="#" class="services-1">
-                      
+
                         <div class="desc">
                             <h3 class="mb-5">Zoho Sites</h3>
                         </div>
@@ -270,7 +370,7 @@
                 </div>
                 <div class="col-md-4 text-center d-flex ftco-animate">
                     <a href="#" class="services-1">
-                       
+
                         <div class="desc">
                             <h3 class="mb-5">Zoho Salesiq</h3>
                         </div>
@@ -278,7 +378,7 @@
                 </div>
                 <div class="col-md-4 text-center d-flex ftco-animate">
                     <a href="#" class="services-1">
-                       
+
                         <div class="desc">
                             <h3 class="mb-5">Zoho Campaigns</h3>
                         </div>
@@ -427,7 +527,7 @@
     </section>
 
 
-    <section class="ftco-section" id="blog-section" style="margin-bottom: 7rem;">
+    <section class="ftco-section" id="blog-section">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-7 heading-section text-center ftco-animate">
@@ -477,10 +577,7 @@
                 </div>
             </div>
         </div>
-
     </section>
-
-
 
     <section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
         <div class="container">
@@ -634,20 +731,22 @@
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
                 stroke="#F96D00" />
         </svg></div>
-    <script src="jquery.min.js"></script>
-    <script src="jquery-migrate-3.0.1.min.js"></script>
-    <script src="popper.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-    <script src="jquery.easing.1.3.js"></script>
-    <script src="jquery.waypoints.min.js"></script>
-    <script src="jquery.stellar.min.js"></script>
-    <script src="owl.carousel.min.js"></script>
-    <script src="jquery.magnific-popup.min.js"></script>
-    <script src="aos.js"></script>
-    <script src="jquery.animateNumber.min.js"></script>
-    <script src="scrollax.min.js"></script>
 
-    <script src="main.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+
+    <script src="js/main.js"></script>
 
 </body>
 
